@@ -1,0 +1,24 @@
+@keyframes smoke {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+    25% {
+        transform: translateY(100px) scale(1.5);
+        opacity: 0.5;
+      }
+    100% {
+      transform: translateY(-100px) scale(2.0);
+      opacity: 0;
+    }
+  }
+  
+  .smoke {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background:linear-gradient(red,green,pink,blue);
+    border-radius: 50%;
+    animation: smoke 2s linear infinite;
+    pointer-events: none;
+  }
